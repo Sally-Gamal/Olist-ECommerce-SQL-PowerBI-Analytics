@@ -1,9 +1,9 @@
 # 🛒 Olist E-Commerce Business Intelligence & Strategic Optimization Case Study
 
 ## 1. 📊 Interactive Dashboard Overview
-![Olist Dashboard 1](olist_dashboard1.jpg.jpg)
-![Olist Dashboard 2](olist_dashboard2.jpg.jpg)
-![Olist Dashboard 3](olist_dashboard3.jpg.jpg)
+![Olist Dashboard 1](dashboards/olist_dashboard1.jpg)
+![Olist Dashboard 2](dashboards/olist_dashboard2.jpg)
+![Olist Dashboard 3](dashboards/olist_dashboard3.jpg)
 
 ---
 
@@ -40,7 +40,7 @@ Olist operates as a major e-commerce marketplace in Brazil, connecting small sel
 ## 🏗️ 4. Data Architecture & Relational Data Model (Star Schema)
 To enable fast query performance and seamless cross-filtering across multiple dimensions, I designed a **Relational Data Model (Star Schema)** linking `orders` as a central fact table to normalized dimension tables (`customers`, `products`, `sellers`, `order_reviews`, `order_payments`, and `geolocation`):
 
-![Olist Data Model](olist_data_model.jpg.jpg)
+![Olist Data Model](dashboards/olist_data_model.jpg.)
 
 ---
 
@@ -48,15 +48,14 @@ To enable fast query performance and seamless cross-filtering across multiple di
 
 The data extraction and business logic were validated on SQL Server using optimized queries (`JOIN`s, `DATEDIFF`, `DATEPART`, and window functions):
 
-![SQL Query 1](olist_queries1.sql.jpg.jpg)
-![SQL Query 2](olist_queries2.sql.jpg.jpg)
-![SQL Query 3](olist_queries3.sql.jpg.jpg)
-![SQL Query 4](olist_queries4.sql.jpg.jpg)
-![SQL Query 5](olist_queries5.sql.jpg.jpg)
+![SQL Query 1](dashboards/olist_queries1.sql.jpg)
+![SQL Query 2](dashboards/olist_queries2.sql.jpg)
+![SQL Query 3](dashboards/olist_queries3.sql.jpg)
+![SQL Query 4](dashboards/olist_queries4.sql.jpg)
+![SQL Query 5](dashboards/olist_queries5.sql.jpg)
 
 ---
 
 ## 📂 Repository Contents
-* `olist_dashboard*.jpg.jpg`: High-resolution Power BI dashboard previews.
-* `olist_data_model.jpg.jpg`: Relational data schema architecture.
-* `olist_queries*.sql.jpg.jpg`: Verified SQL Server queries and execution results.
+* `dashboards/`: Directory containing all high-resolution dashboards, data schema, and SQL execution snapshots.
+* `README.md`: Executive business summary and analytical case study documentation.
