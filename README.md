@@ -1,58 +1,54 @@
-# 🛒 Olist E-Commerce Analytics (SQL Server & Power BI Case Study)
+# 🛒 Olist E-Commerce Business Intelligence & Strategic Optimization Case Study
 
 ## 1. 📊 Interactive Dashboard Overview
-![Olist Dashboard 1](olist_dashboard1.jpg)
-![Olist Dashboard 2](olist_dashboard2.jpg)
-![Olist Dashboard 3](olist_dashboard3.jpg)
+![Olist Dashboard 1](olist_dashboard1.jpg.jpg)
+![Olist Dashboard 2](olist_dashboard2.jpg.jpg)
+![Olist Dashboard 3](olist_dashboard3.jpg.jpg)
 
 ---
 
-## 2. 📝 Executive Summary
-This analytics project explores the **Olist E-Commerce Dataset** (Brazilian Market) containing **99k+ orders**. By leveraging **SQL Server for data extraction & business logic validation** and **Power BI for dynamic visualization**, the goal is to evaluate overall revenue performance, shipping efficiency, geographic market share, and customer satisfaction metrics.
+## 2. 📝 Executive Summary & Business Context
+Olist operates as a major e-commerce marketplace in Brazil, connecting small sellers with nationwide buyers. This analysis investigates **99k+ historical orders** to resolve key operational bottlenecks: severe fulfillment delays in remote regions, revenue dependency on limited geographic hubs, and revenue drop-offs during off-peak hours.
 
-### 📈 Key Performance Indicators (KPIs):
-* **Total Revenue:** ~$13.59 Million
-* **Total Customers:** 99,441
-* **Average Review Score:** 4.0 / 5.0
-* **Completed Orders:** 96,478 Delivered Orders
-* **Geographic Coverage:** 27 Brazilian States
-
----
-
-## 3. 🛢️ SQL Queries & Logic Validation (Code Documentation)
-*Below are the validated T-SQL queries executed on SQL Server to aggregate KPIs, calculate delivery durations (`DATEDIFF`), analyze hourly sales trends (`DATEPART`), and extract state-level market share:*
-
-![SQL Query 1](olist_queries1.sql)
-![SQL Query 2](olist_queries2.sql)
-![SQL Query 3](olist_queries3.sql)
-![SQL Query 4](olist_queries4.sql)
-![SQL Query 5](olist_queries5.sql)
+### 📈 Core Business KPIs:
+* **Total Gross Revenue:** ~$13.59 Million
+* **Total Customer Base:** 99,441 Active Buyers
+* **Customer Satisfaction Index:** 4.0 / 5.0 Avg Review Score
+* **Fulfillment Success Rate:** 96,478 Delivered Orders (27 States)
 
 ---
 
-## 4. 🔍 Deep-Dive Insights (Analytical Findings)
+## 3. 🎯 Business Problems, Analytical Insights & Solutions
 
-### A. Geographic Revenue & Market Share
-* **Regional Dominance:** **São Paulo (SP)** is the undisputed market leader, accounting for **41,746+ customers** and over **$5.99 Million** in total payments.
-* **Secondary Markets:** **Rio de Janeiro (RJ)** and **Minas Gerais (MG)** follow as the second and third largest revenue drivers (~$2.14M and ~$1.87M respectively).
+### 🔴 Problem 1: High Delivery Lead Times in Northern & Northeastern States
+* **Analytical Finding:** While São Paulo (SP) achieves an average fulfillment speed of **8 days**, distant states like Acre (AC) and Sergipe (SE) suffer from delays reaching **20 to 21 days**.
+* **Impact:** High delivery duration directly degrades review scores in non-metro regions.
+* **Strategic Action:** Establish regional micro-fulfillment distribution hubs in Brazil's Northeast (e.g., Bahia/Pernambuco) to compress fulfillment times from 21 days down to under 11 days.
 
-### B. Shipping Performance & Fulfillment Speed
-* **Fastest Delivery:** São Paulo (SP) boasts the fastest fulfillment time with an average delivery speed of **8 days**.
-* **Regional Bottlenecks:** Northern states (e.g., AC, SE, PB) experience longer delivery times averaging **20 to 21 days**, highlighting potential logistics bottlenecks in distant regions.
+### 🔴 Problem 2: Over-Centralization of Revenue & Geographic Vulnerability
+* **Analytical Finding:** Over **44% of total revenue ($5.99M+)** and customer concentration is locked within São Paulo (SP).
+* **Impact:** The business model faces significant operational risk if supply chain disruptions occur within the SP region.
+* **Strategic Action:** Implement targeted seller-acquisition incentives in secondary markets (Minas Gerais & Rio de Janeiro) and offer subsidized shipping tiers to expand market share outside SP.
 
-### C. Category Performance & Sales Trends
-* **Top Revenue Categories:** `cama_mesa_banho` (Bed/Bath), `beleza_saude` (Health/Beauty), and `relogios_presentes` (Watches/Gifts) drive the highest overall sales volume.
-* **Hourly Shopping Patterns:** Peak ordering hours occur between **10:00 AM and 4:00 PM**, generating over **$1 Million in hourly revenue** during peak slots.
-
----
-
-## 💡 5. Strategic Recommendations for Olist
-1. **Logistics Optimization:** Establish regional fulfillment centers in North/Northeast states to cut down delivery times from 21 days to under 12 days.
-2. **Targeted Promotions:** Schedule marketing push notifications during peak buying hours (**10 AM – 4 PM**) to maximize conversion rates.
-3. **Inventory Allocation:** Prioritize stock replenishment for top revenue-generating categories (`beleza_saude` & `cama_mesa_banho`) in SP and RJ hubs.
+### 🔴 Problem 3: Unused Off-Peak Conversion Opportunities
+* **Analytical Finding:** Hourly trend analysis demonstrates massive conversion spikes between **10:00 AM and 4:00 PM** ($1M+ revenue/hour), with drastic drop-offs during early morning hours.
+* **Impact:** Server infrastructure and customer support resources remain idle during off-peak periods.
+* **Strategic Action:** Schedule automated, personalized promotional push notifications and flash-sales during low-traffic windows (6:00 AM - 9:00 AM) to flatten the order-volume curve.
 
 ---
 
-## 📂 Repository Content
-* `olist_dashboard*.jpg`: Dashboard visualizations and executive reporting screens.
-* `olist_queries*.jpg`: Execution snapshots of T-SQL analytical scripts from SQL Server.
+## 🛠️ 4. SQL Logic Validation & Technical Architecture
+
+The data extraction and business logic were validated on SQL Server using optimized queries (`JOIN`s, `DATEDIFF`, `DATEPART`, and window functions):
+
+![SQL Query 1](olist_queries1.sql.jpg)
+![SQL Query 2](olist_queries2.sql.jpg)
+![SQL Query 3](olist_queries3.sql.jpg)
+![SQL Query 4](olist_queries4.sql.jpg)
+![SQL Query 5](olist_queries5.sql.jpg)
+
+---
+
+## 📂 Repository Contents
+* `olist_dashboard*.jpg.jpg`: High-resolution Power BI dashboard previews.
+* `olist_queries*.sql.jpg`: Verified SQL Server queries and execution results.
