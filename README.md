@@ -37,7 +37,14 @@ Olist operates as a major e-commerce marketplace in Brazil, connecting small sel
 
 ---
 
-## 🛠️ 4. SQL Logic Validation & Technical Architecture
+## 🏗️ 4. Data Architecture & Relational Data Model (Star Schema)
+To enable fast query performance and seamless cross-filtering across multiple dimensions, I designed a **Relational Data Model (Star Schema)** linking `orders` as a central fact table to normalized dimension tables (`customers`, `products`, `sellers`, `order_reviews`, `order_payments`, and `geolocation`):
+
+![Olist Data Model](olist_data_model.jpg.jpg)
+
+---
+
+## 🛠️ 5. SQL Logic Validation & Technical Architecture
 
 The data extraction and business logic were validated on SQL Server using optimized queries (`JOIN`s, `DATEDIFF`, `DATEPART`, and window functions):
 
@@ -51,4 +58,5 @@ The data extraction and business logic were validated on SQL Server using optimi
 
 ## 📂 Repository Contents
 * `olist_dashboard*.jpg.jpg`: High-resolution Power BI dashboard previews.
+* `olist_data_model.jpg.jpg`: Relational data schema architecture.
 * `olist_queries*.sql.jpg.jpg`: Verified SQL Server queries and execution results.
