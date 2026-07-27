@@ -41,14 +41,14 @@ Olist operates as a major e-commerce marketplace in Brazil, connecting small sel
 
 The data extraction and business logic were validated on SQL Server using optimized queries (`JOIN`s, `DATEDIFF`, `DATEPART`, and window functions):
 
-![SQL Query 1](olist_queries1.sql.jpg)
-![SQL Query 2](olist_queries2.sql.jpg)
-![SQL Query 3](olist_queries3.sql.jpg)
-![SQL Query 4](olist_queries4.sql.jpg)
-![SQL Query 5](olist_queries5.sql.jpg)
+![SQL Query 1](olist_queries1.sql.jpg.jpg)
+![SQL Query 2](olist_queries2.sql.jpg.jpg)
+![SQL Query 3](olist_queries3.sql.jpg.jpg)
+![SQL Query 4](olist_queries4.sql.jpg.jpg)
+![SQL Query 5](olist_queries5.sql.jpg.jpg)
 
 ---
 
 ## 📂 Repository Contents
 * `olist_dashboard*.jpg.jpg`: High-resolution Power BI dashboard previews.
-* `olist_queries*.sql.jpg`: Verified SQL Server queries and execution results.
+* `olist_queries*.sql.jpg.jpg`: Verified SQL Server queries and execution results.
